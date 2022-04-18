@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: Whether it's a patch, minor or major release
+        description: Choose a release type
         required: true
         type: choice
         options:

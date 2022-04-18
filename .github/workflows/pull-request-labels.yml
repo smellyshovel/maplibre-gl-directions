@@ -11,4 +11,4 @@ jobs:
         with:
           mode: exactly
           count: 1
-          labels: "breaking change, enhancement, bug, ignore for release"
+          labels: "semver:major, semver:minor, semver:patch, release:ignore"
