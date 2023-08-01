@@ -78,7 +78,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
     "maplibre-gl": "^3.0.0",
-    "postcss": "^8.4.23",
+    "postcss": "^8.4.27",
     "postcss-load-config": "^4.0.1",
     "prettier": "^2.8.8",
     "prettier-plugin-svelte": "^2.10.0",
