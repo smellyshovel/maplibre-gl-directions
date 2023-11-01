@@ -74,7 +74,7 @@
     "@typescript-eslint/eslint-plugin": "^6.3.0",
     "autoprefixer": "^10.4.14",
     "eslint": "^8.46.0",
-    "eslint-plugin-svelte": "^2.32.4",
+    "eslint-plugin-svelte": "^2.34.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.3",
     "maplibre-gl": "^3.3.0",
