@@ -19,7 +19,6 @@ jobs:
       - name: Prepare, Check (Formatting, Linting and Svelte checks), Build
         run: |
           npm ci
-          npm link
-          npm link @maplibre/maplibre-gl-directions
+          npm run env:prep
           npm run check
           npm run build
