@@ -1,7 +1,7 @@
 name: Pull Request Checks
 on:
   pull_request:
-    types: [opened, labeled, unlabeled, synchronize]
+    types: [opened, synchronize]
 
 jobs:
   check-build:
@@ -16,9 +16,16 @@ jobs:
         with:
           node-version: 24
 
-      - name: Try to Build
+      - name: Prepare
         run: |
           npm ci
           npm link
           npm link @maplibre/maplibre-gl-directions
+
+      - name: Check
+        run: |
+          npm run check
+
+      - name: Build
+        run: |
           npm run build
