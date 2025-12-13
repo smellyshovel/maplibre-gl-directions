@@ -6,7 +6,7 @@
 2. Fork the repo
 3. Clone the fork
 4. Install the dependencies: `npm i`
-5. Run `npm run env:prep`
+5. Run `npm run env:`
 6. Introduce some changes (see the section below)
 7. Make sure the `npm run build` passes
 8. Commit and push the changes
