@@ -16,16 +16,10 @@ jobs:
         with:
           node-version: 24
 
-      - name: Prepare
+      - name: Prepare, Check (Formatting, Linting and Svelte checks), Build
         run: |
           npm ci
           npm link
           npm link @maplibre/maplibre-gl-directions
-
-      - name: Check
-        run: |
           npm run check
-
-      - name: Build
-        run: |
           npm run build
