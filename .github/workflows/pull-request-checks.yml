@@ -4,8 +4,8 @@ on:
     types: [opened, synchronize]
 
 jobs:
-  check-build:
-    name: Build
+  check:
+    name: Linting, Formatting and Svelte checks
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
@@ -16,9 +16,26 @@ jobs:
         with:
           node-version: 24
 
-      - name: Prepare, Check (Formatting, Linting and Svelte checks), Build
+      - name: Prepare and Check
         run: |
           npm ci
           npm run env:prep
           npm run check
+
+  build:
+    name: Build Passes
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v6.0.1
+
+      - name: Use Node 24
+        uses: actions/setup-node@v6.1.0
+        with:
+          node-version: 24
+
+      - name: Prepare and Check
+        run: |
+          npm ci
+          npm run env:prep
           npm run build
