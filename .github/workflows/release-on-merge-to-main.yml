@@ -13,3 +13,5 @@ permissions:
 jobs:
   release:
     uses: maplibre/reusable-workflows/.github/workflows/npm-publish.yml@main
+    with:
+      docs-command: 'npm run build:demo'
