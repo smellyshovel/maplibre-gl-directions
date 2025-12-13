@@ -8,7 +8,7 @@
 4. Install the dependencies: `npm i`
 5. Run `npm run env:prep`
 6. Introduce some changes (see the section below)
-7. Make sure the `npm run build` passes
+7. Make sure the `npm run ` passes
 8. Commit and push the changes
 9. Create a PR
 
